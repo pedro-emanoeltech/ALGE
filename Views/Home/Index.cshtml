@@ -1,0 +1,106 @@
+﻿@{
+    Layout = "~/Views/Shared/_Foundation.cshtml";
+}
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALGE - assunto do momento </title>
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+</head>
+<body>
+
+    <!--CABEÇARIO-->
+    <div class="title-bar" data-responsive-toggle="realEstateMenu" data-hide-for="small">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
+    </div>
+
+    <div class="top-bar" id="realEstateMenu">
+        <div class="top-bar-left">
+
+            <ul class="menu" data-responsive-menu="accordion">
+                <li > <img src="~/Content/Imagens/ALGE LOGO.png"</li>
+
+
+                <li>@Html.ActionLink("Cliente", "Index", "Cliente")</li>
+                <li>@Html.ActionLink("Plano", "Index", "Plano")</li>
+                <li>@Html.ActionLink("Contato", "Index", "Contato")</li>
+
+            </ul>
+        </div>
+   
+
+    </div>
+    <!-- /tela principal -->
+
+    <br>
+
+    <div class="row">
+
+        <div class="medium-7 large-6 columns">
+            <h1>Otimizando sua busca por conteudo</h1>
+            <p class="subheader">Nossa Empresa ALGE tem como objetivo otimizar o tempo de pesquisa na internet por busca de conteudo que está em alta atraves de nossas ferramentas disponibilizados só aqui na ALGE. </p>
+            <button class="button">Nossos Clientes</button>
+            <button class="button">30 dias gratis </button>
+        </div>
+
+        
+        <div class="medium-5 large-3 columns">
+            <div class="callout secondary">
+                <form>
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <label>
+                                Pesquisa palavra Chave
+                                <input type="text" placeholder="Digite apenas uma palavra">
+                            </label>
+                        </div>
+                        <div class="small-12 columns">
+                            <label>
+                                Quantidade de Resultados
+                                <input type="number" placeholder="Maximo 10 Gratis">
+                            </label>
+                            <button type="submit" class="button">Buscar Assunto no ALGE</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row column">
+        <hr>
+    </div>
+
+  
+           
+        </div>
+        <div class="row">
+
+            <div class="medium-6 columns">
+                <ul class="menu">
+                    
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="medium-6 columns">
+                <ul class="menu float-right">
+                    <li class="menu-text">Copyright</li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+</html>
